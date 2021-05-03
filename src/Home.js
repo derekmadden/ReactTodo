@@ -16,7 +16,7 @@ export const Home = () => {
     const todoDescRef = useRef()
 
     useEffect(() => {
-        Axios.get('http://localhost:3001/api/get').then((response)=> {
+        Axios.get('http://ec2-3-141-40-226.us-east-2.compute.amazonaws.com:3001/api/get').then((response)=> {
             // console.log(response);
             setTodos(response.data);
         })
@@ -30,7 +30,7 @@ export const Home = () => {
         
         if(name === '' || desc === '' ) return
 
-        Axios.post('http://localhost:3001/api/insert',{
+        Axios.post('http://ec2-3-141-40-226.us-east-2.compute.amazonaws.com:3001/api/insert',{
             todoName: name, 
             todoDesc: desc, 
             targDate: dueDate
@@ -55,7 +55,7 @@ export const Home = () => {
         // console.log(newTodos)
         // console.log("todo to update = " + formatDate(completion_date))
         // console.log("todo to update = " + id);
-        Axios.put('http://localhost:3001/api/update',{
+        Axios.put('http://ec2-3-141-40-226.us-east-2.compute.amazonaws.com:3001/api/update',{
             todoId: id, 
             complete: "1", 
             compDate: formatDate(completion_date)
@@ -69,7 +69,7 @@ export const Home = () => {
         const newTodos = todos.filter(todo => !todo.complete)
         const deletedTodos = todos.filter(todo => todo.complete)
         deletedTodos.forEach((element, index, array) => {
-            Axios.delete('http://localhost:3001/api/delete', {data:{ todoId: element.id}});
+            Axios.delete('http://ec2-3-141-40-226.us-east-2.compute.amazonaws.com:3001/api/delete', {data:{ todoId: element.id}});
             console.log("deleted element: " + element.id);
         });
         setTodos(newTodos)
