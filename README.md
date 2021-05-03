@@ -16,6 +16,12 @@ This React Todo app was built for the interview process for OnlineMedEd.com
 
 SCOPE OF PROJECT
 ------------
+<<<<<<< HEAD
 Frontend - React.js
 Backend - Node.js
 Database - MySQL
+=======
+* Frontend - React.js
+* Backend - Node.js
+* Database - MySQL
+>>>>>>> refs/remotes/origin/main
