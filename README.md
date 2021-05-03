@@ -8,7 +8,7 @@ CONTENTS OF THIS FILE
 INTRODUCTION
 ------------
 
-This React Todo app was built for the interview process for OnlineMedEd.com
+This React Todo app was built with react.js
 
  * For a full demo of the app, visit the project page:
     https://master.d21tbdzgkvm4zw.amplifyapp.com/
@@ -16,12 +16,6 @@ This React Todo app was built for the interview process for OnlineMedEd.com
 
 SCOPE OF PROJECT
 ------------
-<<<<<<< HEAD
 Frontend - React.js
 Backend - Node.js
 Database - MySQL
-=======
-* Frontend - React.js
-* Backend - Node.js
-* Database - MySQL
->>>>>>> refs/remotes/origin/main
